@@ -3,11 +3,11 @@ const express = require('express')
 const app = express()
 
 //Define a PORTA 
-const port = 5353
+const port = 5000
 
 //CONEXÃO COM O SERVIDOR
-app.listen(port, () => {
-    console.log("Servidor rodando na porta 5353")
+app.listen(process.env.PORT || port, () => {
+    console.log("Servidor rodando na porta 5000")
 })
 
 //adiciona o mongoose
@@ -32,6 +32,5 @@ app.use('/usuarios', usuarios_router)
 
 //ROTA PRINCIPAL 
 app.get('/', (req, res) => {
-    res.render("pages/index") 
+    res.render("pages/index")
 })
-
