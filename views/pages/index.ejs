@@ -2,11 +2,15 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="sortcut icon" href="https://d8vlg9z1oftyc.cloudfront.net/artye/image/product/17657b07f205d9cf98ec23e76db2763320190311201634/450/letra-g-azul-claro-5cm_5172.png" type="image/gif" />
+    <link rel="sortcut icon"
+        href="https://d8vlg9z1oftyc.cloudfront.net/artye/image/product/17657b07f205d9cf98ec23e76db2763320190311201634/450/letra-g-azul-claro-5cm_5172.png"
+        type="image/gif" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
@@ -24,12 +28,14 @@
             background-size: cover;
             text-align: center
         }
-        
+
         #header {
+            background-color: white;
             padding: 30px;
         }
 
         #header.large {
+            background-color: white;
             padding: 30px;
             transition: 1s;
         }
@@ -50,7 +56,9 @@
             font-size: 1.75rem;
         }
 
-        .bgimg-1, .bgimg-2, .bgimg-3 {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
             position: relative;
             opacity: 0.4;
             background-attachment: fixed;
@@ -112,6 +120,24 @@
             background: #b8b8b8;
             border-radius: 5px;
         }
+
+        .textoLogo{
+            color: #6ec0f7;
+            }
+            #nome{
+                display: none;
+            }
+
+        @media(max-width: 500px) {
+            .textoLogo{
+            display: none;
+            }
+            #nome{
+                display: block;
+            }
+        }
+
+        
     </style>
 </head>
 
@@ -124,13 +150,16 @@
     <div id="header" class="shadow-lg sticky-top">
 
         <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="/" id="nome" style="color: #6ec0f7;;">Gugu, a Rede Social</a>
+            <a class="navbar-brand" href="/" > <img src="../../images/Gugu.png"
+                    style="height: 100px;"> <br> <span class="textoLogo">a Rede Social</span> </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="navbar-brand" href="/" id="nome" style="color: #6ec0f7;">a Rede Social</a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link px-5" href="/usuarios/cadastrarUsuarios">Cadastrar</a>
@@ -163,7 +192,11 @@
                 </div>
                 <div class="modal-body">
                     <blockquote class="twitter-tweet">
-                        <p lang="pt" dir="ltr">Gugu lança Gugu, nova rede social de micro-blogging com limite de 4caracteres <a href="https://t.co/1zLbGmQ9hl">pic.twitter.com/1zLbGmQ9hl</a></p>&mdash;Satélite Online 🌎 (@sateliteweb) <a href="https://twitter.com/sateliteweb/status/684444964936368129?ref_src=twsrc%5Etfw">January 5, 2016</a>
+                        <p lang="pt" dir="ltr">Gugu lança Gugu, nova rede social de micro-blogging com limite de
+                            4caracteres <a href="https://t.co/1zLbGmQ9hl">pic.twitter.com/1zLbGmQ9hl</a></p>
+                        &mdash;Satélite Online 🌎 (@sateliteweb) <a
+                            href="https://twitter.com/sateliteweb/status/684444964936368129?ref_src=twsrc%5Etfw">January
+                            5, 2016</a>
                     </blockquote>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
@@ -218,13 +251,19 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
