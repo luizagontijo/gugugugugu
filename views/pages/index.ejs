@@ -129,7 +129,7 @@
             }
 
         @media(max-width: 500px) {
-            .textoLogo{
+            .textoLogo, #esquerda{
             display: none;
             }
             #nome{
@@ -158,7 +158,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <a class="navbar-brand" href="/" id="nome" style="color: #6ec0f7;">a Rede Social</a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -221,8 +221,8 @@
         </div>
     </div>
 
-    <footer class="p-3 bg-light d-flex justify-content-around">
-        <div id="esquerda">
+    <footer class="p-3 bg-light row d-flex justify-content-around">
+        <div class="col-sm-4" id="esquerda">
             <div class="list-group list-group-flush text-left">
                 <h4 class="list-group-item">Mapa do Site</h4>
                 <a href="/usuarios/cadastrarUsuarios" class="list-group-item">Cadastrar</a>
@@ -231,16 +231,15 @@
             </div>
         </div>
 
-        <div id="centro">
-            <a id="nome" class="navbar-brand p-3" href="/">
-                Gugu, <br>
-                a Rede Social
-            </a>
+        <div id="centro" class="col-sm-4">
+            <a class="navbar-brand pt-3" href="/" style="
+            margin-right: 0px;"> <img src="../../images/Gugu.png"
+                style="height: 60px;"> <br> <span class="small" >a Rede Social</span> </a>
             <p class="small pt-5">Desenvolvido por Luiza Gontijo, 2021</p>
 
         </div>
 
-        <div id="direita">
+        <div id="direita" class="col-sm-4">
             <div class="list-group list-group-flush">
                 <a class="list-group-item" href="/usuarios/termos">Termos e Condições</a>
                 <a class="list-group-item" href="/usuarios/politica">Política de Privacidade</a>
